@@ -1,0 +1,55 @@
+Algoritmo Mezcla:
+    El algoritmo de mezcla utiliza un arreglo auxiliar, aux[] para realizar
+    entre dos sublistas ordenadas, que se encuentran en el vector a[], delimitadas 
+    por los indices izda, medio y derecha. A partir de estos indices se pueden
+    recorrer las sublistas con las variables i , k. En cada pasada del 
+    algoritmo de mezcla se compara a[i] con a[k], el menor se copia en el 
+    vector auxiliar, aux[], y avanzan los indices de la sublista y del vector
+    auxiliar.
+    i = sublista izquierda; k - sublista derecha; z = indice inicial de aux
+    1 9     3 5   
+    i       k
+
+    aux:
+    z
+
+    i < k
+        si aux : 1 
+        z++
+        i++
+    i < k
+        no aux = 1 3
+        z++
+        k++
+    i < k
+        no aux : 1 3 5 
+        z++
+        k++
+    k termino
+        lo cual queda i = 9;  aux = 1 3 5 9
+        z++
+        i++
+    void mezcla(int a[], int izquierda, int medio, int derecha){
+        int *aux;
+        int i, k, z;
+        aux = new int(derecha - izquierda + 1);
+        i = z = izquierda;
+        k = medio + 1;
+        while(i <= medio && k <= derecha){ // bucle para la mezcla, utiliza aux[], como arreglo auxiliar
+            if(a[i] <= a[k]){
+                aux[z++] = a[i++];
+            }else{
+                aux[z++] = a[k++];
+            }
+        }
+        while(i <= medio){  //se mueven elementos no mezclados de sublistas
+            aux[z++] = a[i++];
+        }
+        while(k <= derecha){
+            aux[z++] = a[k++];
+        }
+        for(int i = izquierda; i <= derecha; i++){  // copia de elementos de aux[] hacia a[]
+            a[i] = aux[i];
+        }
+        delete aux;
+    }

@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "CPP: Compilador Personalizado C++. Compilando...",
+			"command": "cpp.exe",
+			"args": [
+				"-g",
+				"-I",
+				"..\\include",
+				"..\\src\\*.cpp",
+				"-o",
+				"..\\bin\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: \"C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\cpp.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "G++: Compilador Personalizado C++. Compilando...",
+			"command": "g++.exe",
+			"args": [
+				"-g",
+				"-I",
+				"..\\include",
+				"..\\src\\*.cpp",
+				"-o",
+				"..\\bin\\${fileBasenameNoExtension}.exe",
+				"..\\bin\\${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: \"C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\g++.exe\""
+		}
+	]
+}

@@ -1,0 +1,65 @@
+Eficiencia de Bucles:
+    En general, el formato de la eficiencia se puede expresar 
+    mediante una funcion
+        f(n) = eficiencia
+    Es decir, la eficiencia del algoritmo se examina como una funcion del numero
+    de elementos a ser procesados.
+Bucles lineales:
+    En los bucles se repiten las sentenias del cuerpo del bucle un numero 
+    determinado de veces que determina la eficiencia del mismo. Normalmente, 
+    en los algoritmos los bucles son el termino dominante en cuanto a la eficiencia.
+    ex:
+    Cuantas veces se repite el cuerpo del bucle en el siguiente codigo?
+    i =1;
+    while(i <= n){
+        i = i + 1;
+    }
+    si n es un entero,por ejemplo de valor 100, la respuesta es 100 veces. 
+    El numero de iteraciones es directamente proporcional al facor del bucle,
+    n. Como la eficiencia es directamente proporcional al numero de iteraciones
+    la funcion expresa la eficiencia es:
+        f(n) = n;
+    Cuantas veces se repite el cuerpo del bucle en el siguiente codigo?
+    i =1;
+    while(i <= n){
+        i = i + 2;
+    }
+    La respuesta no siempre es tan evidente como en el ejemplo anterior. Ahora el 
+    contador i avanza de 2 en 2, por lo que la respuesta es es n/2. En este
+    caso el factor de eficiencia es:
+        f(n) = n/2;
+Bucles Algoritmicos
+    Consideremos un bucle en el que su variable de control se multiplique o 
+    divida dentor de dicho bucle
+    Cuantas veces se repite el cuerpo del bucle en los siguientes segmentos
+    de programa?
+    i = 1;
+    while(i < 1000){ // bucle algoritmo
+        i = i * 2;
+    }
+    i = 1000;
+    while(i >- 1){ // bucle algoritmo
+        i = i / 2;
+    }
+    En ambos bucles se ejecutan 10 iteraciones. La razon es que en cada 
+    iteracionesel valor i se doble en el bucle de multiplicar y se divide 
+    por la mitad en el bucle de division. Por consiguiente, el numero de 
+    iteraciones es una funcion de multiplicador o divisor, en este caso 2.
+
+    bucle de multiplicador      2^iteraciones < 1000
+    bucle dividir               100/2^iteraciones >= 1
+    Generalizando, el analisis se puede decir que las iteraciones de los Bucles
+    espacificados se determinan por la siguiente formula:
+        f(n) = log(n);
+Bucles anidados:
+    El total de iteraciones de bucle anidados(bucles que contienen a otros bucles)
+    se determina multiplicando el numero de iteraciones del bucle interno por
+    el numero de iteraciones del bucle externo.
+        iteraciones = iteraciones del bucle externo * iteraciones del bucle interno
+
+    Existen tres tipos de bucles anidados: lineal logaritmico, cuadratico dependientes y
+    cuadraticos que con analisis similares a los anteriores nos conducen 
+    a las siguientes ecuaciones de eficiencia.
+        * lineal logaritmico = f(n) = n*log_2(n)
+        * dependiente cuadratica = f(n) = n(n+1)/2
+        * cuadratica = f(n) = n^2;

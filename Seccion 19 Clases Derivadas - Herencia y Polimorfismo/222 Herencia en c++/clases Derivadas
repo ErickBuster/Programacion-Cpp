@@ -1,0 +1,23 @@
+Que son las clases derivadas?
+    La herencia es la relacion que existe entre dos clases
+    en la que una clase denominada clase hija o clase derivadas
+    se crea a partir de otra ya existente, denominada clase
+    padre o clase base
+ex:
+
+Triangulo ===========> Figura
+            es un /a (palabra de relacion)
+
+    Diagramas de clase                 Cuadrado         
+    Figura                              -nLados : int
+    -nLados : int           <-----      -lado : float
+    Figura(int nLados)                  Cuadrado(int nLados)
+    getNLados() : int                   getNLados() : int
+        ^                               areaCuadrado() : float
+        |   Clases Hijas(hereda todos los atributos y metodos)
+    Triangulo
+    -nLados : int
+    -l1, l2, l3 : int
+    Triangulo(int nLados)
+    getNLados():
+    areaTriangulo() : float

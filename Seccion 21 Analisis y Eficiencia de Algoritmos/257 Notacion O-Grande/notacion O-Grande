@@ -1,0 +1,57 @@
+notacion O-Grande:
+    La alta velocidad de las computadoras actuales hace que la media
+    exacta de la eficiencia de un algoritmo no sea una preocupacion vital 
+    en el diseño pero si el orden general de magnitud de la misma
+    Si el analisis de dos algoritmos muestra que uno ejecuta 25 iteaciones
+    mientras que otro ejecuta 40 , la practica muestra que ambos son muy rapidos
+    entonces. Como valorar las diferencias?. Ahora bien si un algoritmo realiza
+    25 iteaciones y otro 25000 iteaciones, entonces debemos estar preocupados
+    por la rapidez o la lentitud de uno y otro.
+
+    Anteriormente, se ha expressado mediante la formula f(n) el numero de 
+    sentencias ejecutadas para n datos. El factor dominante que se debe considerar
+    para determinar el orden de magnitud de la formula es el denominado 
+    factor de eficiencia.
+    Por consiguiente, no se necesita determinar la medida completa de la 
+    eficiencia, basta con calcular el factor que determina la magnitud. Este
+    factor se define como "O grande", que representa "esta en el orden de" y
+    se expresa como O(n), es decir, "en el orden de n".
+
+    La notacion O indica la cota superior del tiempo de ejecucion de un algoritmo
+    o programa. Asi, en lugar de decir que un algoritmo emple un tiempo
+    4n-1 en procesar un array de longitud n, se dira que emplea un tiempo O(n)
+    que se lee "O grande de n" o bien "O de n" y que informalmente significa
+    "algunos tiempos constantes n"
+
+Determinar la notacion O 
+    La notacion O grande se puede obtener a partir de f(n) utilizando los 
+    siguientes pasos:
+        1. En cada termino, estableces el coeficiente del termino en 1.
+        2. Mantener el termino mayor de la funcion y descartar los restantes.
+        Los terminos se ordenan de menor a mayor.
+            log_2(n)    ->menor magnitud (mayor eficiencia)
+            n
+            nlog_2(n)
+            n^2
+            n^3
+            n^k
+            2^n
+            n!          ->mayor magnitud (menor eficiencia)
+            (eligiendo el termino con mayor magnitud o la cuota superior)
+                       
+    ex:
+        calcular la funcion O grande de la siguiente funcion de eficiencia:
+            f(n) = n(n+1)/2 = (n^2 + n)/2 = (n^2)/2 + n/2 = 1(n^2)/2 + 1(n)/2
+            entonces 1er paso los coeficientes se transforman en 1 lo cual tenemos:
+                1(n^2)/2 + 1(n)/2 = n^2 + n (ya que el 1/2 se trasforma en 1)
+                2do paso elegir la cuota superior o mayor magnitud = n^2
+            La notacino O correspondiente es O(f(n)) = O(n^2)
+    ex2:
+        calcular la funcion O grande de la siguiente funcion de eficiencia:
+            f(n) = a_j n^k + a_(j-1) n^(k-1) +a_(j-2) n^(k-2) + ... + a_2 n^2 + a_1 n + a_0
+            1er paso todos los coeficiente se transforman en 1.
+            f(n) = n^k + n^(k-1) + n^(k-2) + ... + n^2 + n + 1
+            2do paso mayor magnitud de eficiencia lo cual seria
+                f(n) = n^k
+            La notacino O correspondiente es O(f(n)) = O(n^k)
+        

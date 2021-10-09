@@ -1,0 +1,95 @@
+Ejercisio 1:
+    Determinar la Complejidad de la funcion
+    double mayor(double x, double y){
+        if(x > y){
+            return x
+        }else{
+            return y
+        }
+    }
+R = 
+        double mayor(double x, double y){
+        if(x > y){ O(1)
+            return x;
+        }else{
+            return y; O(1)
+        }
+    }
+    La Complejidad de la funcion mayor() es:
+        O(1) + O(1) = O(1)
+
+Ejercisio 2:
+    Determinar la Complejidad de la funcion
+    void mostrarArreglo(double x[], int n){
+        int j;
+        for(j = 0; j < n; j++){
+            cout << x[j] << endl;
+        }   
+    }
+R = 
+    void mostrarArreglo(double x[], int n){
+        int j; 
+        for(j = 0; j < n; j++){     O(n)
+            cout << x[j] << endl;   O(1)
+        }   
+    }
+    La Complejidad de la funcion mostrarArreglo() es:
+        O(n) * O(1) = O(n)
+
+Ejercisio 3
+    Determinar la Complejidad de la funcion
+    double suma(souble d[], int n){
+        int k = 0; s = 0;
+        while(k < n){   
+            s += d[k];
+            if(k == 0){
+                k = 2;
+            }else{
+                k *= 2;
+            }
+        }
+        return s;
+    }
+R = 
+    double suma(double d[], int n){
+        int k = 0; s = 0;   O(1) por asignar valores
+        while(k < n){   O(log_2 n)
+            s += d[k];  O(1)
+            if(k == 0){ O(1)
+                k = 2;
+            }else{      O(1)
+                k *= 2; 
+            }
+        }
+        return s;
+    }
+    La Complejidad de la funcion suma() es:
+        O(1) + (O(log_2 n) + O(1)) = O(log_2 n)
+        Complejidad logaritmica : O(log n)
+
+Ejercisio 4
+    Determinar la Complejidad de la funcion
+    void transpuesta(float d[][m], int n){
+        int i, j;
+        for(i = n-2; i > 0; i++){
+            for(j = i+1; j < n; j++){
+                float t;
+                t = d[i][j];
+                d[i][j] = d[j][i];
+                d[j][i] = t;
+            }
+        }
+    }
+R = void transpuesta(float d[][m], int n){
+        int i, j;
+        for(i = n-2; i > 0; i--){ O(n)
+            for(j = i+1; j < n; j++){ // bucle lineal O(n)
+                float t;
+                t = d[i][j];    O(1)
+                d[i][j] = d[j][i];  O(1)
+                d[j][i] = t;    O(1)
+            }
+        }
+    }
+    La Complejidad de la funcion transpuesta() es:
+    O(n) * O(n) * O(1) = O(n^2)

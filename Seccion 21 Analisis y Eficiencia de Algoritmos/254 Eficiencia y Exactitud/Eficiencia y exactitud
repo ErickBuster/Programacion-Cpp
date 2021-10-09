@@ -1,0 +1,24 @@
+Eficiencia y Exactitud:
+    De las caracteristicas, antes analizadas, que debencumplir los algoritmos 
+    destacan dos por su importancia en el desarrollo de algoritmos y en la 
+    construccion de programas: eficiencia y exactitud.
+    1. Diseñar un algoritmo que sea facil de entender, codificar y depurar
+    2. Diseñar un algoritmo que haha uso eficiente de los recursos de la computadora
+
+    Idealmente, el programa resultante debe cumplir ambos objetivos. En estos
+    casos, se suele decir que tal programa es "elegante"
+
+Eficiencia de un algoritmo:
+    Raramente existe un unico algoritmo para resolver un problema determinado
+    Cuando se comparan dos algoritmos diferentes que resuelven el mismo problema,
+    normalmente se encontrara que un algoritmo es un orden de magnitud mas 
+    eficiente que el otro. En este sentido lo importante, es que el programador
+    sea capaz de reconocer y elegir el algoritmo mas eficiente
+Eficiencia?
+    La eficiencia de un algoritmo es la propiedad mediante la cual un algoritmo
+    debe alcanzar la solucion al problema en el tiempo mas corto posible y/o utilizando
+    la cantidad mas pequeña posible de recursos fisicos
+Como medir la eficiencia de un algoritmo o programa informatico?
+    Uno de los metodos mas sobresalientes es el analisis de algoritmos.
+    El analisis de algoritmos permite medir la dificultad inherente de un problema
+    

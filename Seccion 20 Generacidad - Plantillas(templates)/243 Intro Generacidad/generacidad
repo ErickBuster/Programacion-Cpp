@@ -1,0 +1,11 @@
+Objetivos:  Con el estidio de este capitulo podra:
+    - Conocer el concepto de Genericidad
+    - Definir plantillas para usar la Genericidad en c++
+    - diferenciar las plantillas del polimorfismo
+    - Manejar las plantillas de funciones
+    - Usar y definir plantillas de clases
+Contenido:
+    1. Genericidad
+    2. plantillas de funciones
+    3. plantillas de clases
+    4. Ejercisios

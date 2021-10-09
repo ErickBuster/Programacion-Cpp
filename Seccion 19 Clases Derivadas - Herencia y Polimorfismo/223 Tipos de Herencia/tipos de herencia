@@ -1,0 +1,76 @@
+Tipos de Herencia:
+    en una clase existen secciones publicas, privadas y
+    protegidas.
+        *Los elementos publicos son accesibles a todas las funciones
+        *Los elementos privados son accesibles solo a los miembros
+        de la clase en que estan definidos
+        *Los elementos protegidos pueden ser accedidos por clases
+        derivadas debido a la propiedad de la Herencia
+    en correspondencia con lo anterior existen tres tipos de Herencia:
+        1. publica
+        2. privada
+        3. protegida
+
+    Herencia publica:
+        En general, herencia publica significa que una clase dereivada tiene
+        acceso a los elementos publicos y protegidos de su clase base. los 
+        elementos publicos se heredan como elementos publicos; los elementos
+        protegidos permanecen protegidos; los elementos privados no se heredan        
+
+        class ClaseDerivada : public ClaseBase{
+            private:
+                //Seccion privada
+            public: 
+                //Seccion publica
+            protected:
+                //Seccion:
+        }
+
+Tipo de Herencia | Acceso en la clase Base  | Acceso en la clase derivada
+    public              public                      public
+                        protected                   protected
+                        private                     inaccesible
+
+    Herencia Privada:
+        Con herencia, los miembros publicos y protegidos de la clase base
+        se vuelven miembros privados de la clase derivada. En efecto, los 
+        usuarios de la clase derivada no tienen acceso a las facilidades
+        proporcionadas por la clase base. Los miembros privados de la clase 
+        base son inaccesibles a las funciones miembro de la clase derivada.
+
+        class ClaseDerivada : private ClaseBase{
+            private:
+                //Seccion privada
+            public:
+                //Seccion publica
+            protected:
+                //Seccion protected
+        };
+
+Tipo de Herencia | Acceso en la clase Base  | Acceso en la clase derivada
+    private             public                      private
+                        protected                   private
+                        private                     inaccesible
+                        
+    Herencia Protegida:
+        Con herencia protegida, los miembros publicos y protegidos de la 
+        clae base se convierten en miembros de la clase derivada y los
+        miembros privados de la clase se vueleven inaccesibles
+
+
+        class ClaseDerivada : protected ClaseBase{
+            private:
+                //Seccion privada
+            public:
+                //Seccion publica
+            protected:
+                //Seccion protected
+        };
+
+Tipo de Herencia | Acceso en la clase Base  | Acceso en la clase derivada
+    protected           public                      protected
+                        protected                   protected
+                        private                     inaccesible
+
+
+

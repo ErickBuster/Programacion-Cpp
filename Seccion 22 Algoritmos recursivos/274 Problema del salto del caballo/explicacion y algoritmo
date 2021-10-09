@@ -1,0 +1,60 @@
+Problema del salto del caballo:
+    En un tablero de ajedrez de nxn casillas, se tiene 
+    un caballo situado en la posicion inicial de coordenadas(x_0, y_0).
+    El problema consiste en encontrar, si existe un camino que permita 
+    al caballo pasar exactamente una vez por cada una de las casillas 
+    de tablero, teniendo en cuenta los movimiento(saltos) permitidos
+    a un caballo de ajedrez.
+    Este es un ejemplo clasico de problema que se resuelve con el esquema
+    del Algoritmo vuelta atras. El problema consiste en buscar la secuencia
+    de saltos que tiene que dar el caballo, partiendo de una casilla cualquier
+    para pasar por cada una de las casillas del tablero. Se da por supuesto
+    que el tablero esta vacio, no hay figuras excepto el caballo.
+    Lo primero que hay que tener en cuenta es que el caballo, desde una casilla,
+    puede realizar hasta 8 movimientos
+
+    Los ocho posibles movimientos de caballo se obtienen sumando a la posicion 
+    actual de este (x,y), unos desplazamientos relativos, estos son:
+    d{(2,1),(1,2),(-1,2),(-2,1),(-2,-1),(-1,-2),(1,-2),(2,-1)}
+    Por ejemplo, suponiendo que el caballo se encuentra en la casilla (3,5)
+    los posibles movimientos que puede realizar:
+        {(5,6),(4,7),(2,7),(1,6),(1,4),(2,3),(4,3),(5,4)}
+    No siempre sera posible realizar los 8 movimientos, se debe comprobar 
+        que la casilla destino este dentro del tablero y tambien que no haya 
+        pasado previamente el caballo por esta casilla. En caso de ser posible
+        el movimiento se anota, guardando el numero del salto realizado
+    La casilla que determina que el problemas se ha resuelto esta ligada con el 
+    objetivo que se persigue y en este problema es que haya pasado por las n^2
+    casillas, en definitiva que el caballo haya realizado n^2 - 1 (63 saltos)
+
+    Que ocurre si se agotan los 8 posibles moviemientos sin alcanzar la solucion?
+    Se vuelve al moviemiento anterior, vuelta atras, se borra la anotacion 
+    para ensayar con el siguiente movimiento.
+
+Algoritmo:
+    void saltoCaballo(int i, int x, int y, bool &exito){ // i = contador
+        int nx, ny;
+        int k = 0; //inicializa contador de posibles 8 movimientos
+        existo = false;
+        do{
+            k++;
+            nx = x + d[k-1][0];
+            ny = y + d[k-1][1];
+            //Determinar si nuevas coordenadas son aceptables
+            if((nx>= 0) && (nx < N) && (ny>=0) && (ny < N) && (tablero[nx][ny] == 0)){
+                //Anota movimiento
+                tablero[nx][ny] = i;
+                escribeTablero();   //Funcion para mostrar el tablero (matriz)
+                if(i < N*N){
+                    saltoCaballo(i+1, nx, ny, exito);
+                    if(!exito){
+                        tablero[nx][ny] = 0;    // no se alcanzo la solucion, se borra anotacion
+                    }
+                }else{
+                    existo = true;  //Caballo a cubierto el tablero 
+                }
+            }
+        }while(k < 8 && !existo);
+    }
+
+

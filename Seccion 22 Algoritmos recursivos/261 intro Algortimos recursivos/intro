@@ -1,0 +1,25 @@
+Objetivos:
+    Con el estudio de este capitulo usted podra:
+        - conocer le funcionamiento de la recursividad
+        - Distinguir entre recursividad y recursividad indirecta
+        - Resolver problemas numericos sencillos mediante 
+        funcoines  recursivas
+        - Aplicar la tecnica algoritmica divide y venceras para la resolucion
+        de problemas
+        - Conocer la tecnica algoritmica de resolucion de problemas vuelta atras:
+        backtracking
+    Contenido:
+        - La naturaleza de la recursividad
+        - Funciones recursivas
+        - Recursion vs iteracion
+        - algoritmos divide y venceras
+            A. Torres de Hanoi
+            B. Busqueda binaria
+            C. Ordenacion por mezclas (Megesort)
+        - backtracking, algoritmos de vuelta atras:
+            a. problema del salto del caballo
+                (recorrer con el caballo de ajedrez todas
+                las casillas en el table de ajedrez)
+            b.problema de las N-Reinas(donde colocamos n Reinas
+            en el tablero de ajedrez y que ninguna se amenace con la otra)        
+            

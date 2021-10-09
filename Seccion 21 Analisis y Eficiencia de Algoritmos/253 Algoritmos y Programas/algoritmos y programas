@@ -1,0 +1,60 @@
+Introduccion:
+    La representacion de la informacion es fundamental en ciencias de la 
+    computacion y en informatica. El proposito principal de la mayoria de
+    los programas de computadoras es almacenar y recuperar informacion, 
+    ademas de realizar calculos
+    De modo practico, los requisistos de almacenamiento y tiempo de ejecucion
+    exigen que tales programas deban organizar su informacion de un modo que
+    soporte procesamiento eficiente. Por estas razones, el estudio de 
+    estructuras de datos y los algoritmos que las manipulan constituyen 
+    el nucleo central de la informacion y de la computacion
+
+algoritmos y programas:
+    Un algortimo es un metodo, proceso conjunto de instrucciones utilizadas 
+    para resolver un programa especifico. Un problema puede ser resuelto
+    mediante muchos algoritmos
+    La ventaja de conocer varias soluciones a un problema es que las diferentes
+    soluciones pueden ser mas eficientes para variaciones especificas del problema, o
+    para diferentes entradas del mismo problema.
+    ex:
+        - Un algortimo de ordenacion puede ser el mejor, para ordenar 
+        conjuntos pequeños de numeros
+        - Otro puede ser el mejor para ordenar conjuntos grandes de numeros
+        - Tercer puede ser el emjor para ordenar cadenas de caracteres de 
+        longitud variable
+
+Propiedades de los Algortimos:
+    - Especificacion precisa de la entrada.
+    - Especificacion precisa de cada instruccion
+    - Exactitud, Correccion
+    - Etapas bien definidas y concretas
+    - Numero finito de pasos
+    - Un algoritmo debe terminar
+    - Descripcion del resultado o efecto 
+    Ejemplo:
+    Es un algortimo la instruccion siguiente
+        - Escribir una lista de todos los enteros positivos
+        R: Es imposible ejecutar la instruccion anterior dado que hay infinitos
+        enteros positivos. Por consiguiente, cualquier conjunto de instrucciones 
+        que implique esta instruccion no es un algortimo 
+programas:
+    Normalmente, se considera que un programa de computadora es una representacion
+    concreta de un algoritmo en un lenguaje de programacion
+    Naturalmente, hay muchos programas que son ejemplos del mismo algoritmo, 
+    dado que cualquier lenguaje de programacion moderno se puede utilizar para 
+    implementar cualquier lenguaje de programacion moderno se puede utilizar para
+    implementar cualquier algoritmo(aunque algunos lenguajes facilitaran su tarea
+    al programador mejor que otros). Por definicion, un algoritmo debe proporcionar
+    suficiente detalle para que se pueda convertir en un programa cuando se necesite
+
+    El diseño de un algortimo para ser implementado por un programa de 
+    computador debe tener dos caracteristicas principales:
+        1. Que sea facil de entender, codificar y depurar
+        2. Que consiga la mayor eficiencia a los recursos de la computadora 
+    Idealmente, el programa resultante deberia ser el mas eficiente. 
+    -Como medir la eficiencia de un algoritmo o programa?
+    El metodo correspondiente se denomina "analisis de algoritmos" y permite
+    medir la dificultad inherente a un problema. En este capitulo se desarrollara
+    el concepto y la forma de medir la medida la eficiencia.
+
+    

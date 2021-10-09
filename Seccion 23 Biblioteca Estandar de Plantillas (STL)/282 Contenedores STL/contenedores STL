@@ -1,0 +1,51 @@
+Contenedores STL:
+    Son una coleccion de las estructuras de datos mas populares utilizadas 
+    habitualmente. Un contenedor es justamente eso: un lugar en donde
+    contener o agrupar objetos del mismo tipo 
+    La diferencia entre un contenedor y otro esta en la forma en que los 
+    objetos son alojados, en como se crea la secuencia de elementos y la 
+    manera en que los prodra acceder a cada uno de ellos
+    Estos pueden estar almacenadors en forma contigua en la memoria o 
+    enlazados a traves de punteros. Esto hace que las estructuras difieran 
+    tambien en la forma en que se accede a los elementos, la velocidad 
+    con la cual se insertan o se eliminan esots y en la eficiencia de los
+    algortimos que se apliquen a ellas
+
+    Como se vera luego, cada una de las diferentes estructuras de datos que 
+    implementan los contenedores tiene un proposito particular. Estos 
+    diferentes diseños de almacenamiento de datos tienen ventajas y 
+    desventajas, lo cual prduce que algunos contenedores sean mas adecuados
+    que otros para la resolucion de un problema en particular.
+
+    Contenedores clasificacion(librerias):
+        -Lineales:
+            1. list (Lista) 
+            2. Vector (arreglo o array)
+            3. Deque (cola)
+        -Asociativos:
+            1. map (Lista ordenada de pares asociado en tipo clave y valor
+                y cada uno es unico)
+            2. set (lista ordenada de objetos y son unicos dentro del set)
+            3. multimap (Lista ordenada de pares asociado en tipo y valor 
+            que ya no son unicos)
+            4. multiset(lista ordenada de objetos y ya no son unicos dentro del set)
+Operaciones comunes:
+    Antes de realizar cualquier operacion con un contenedor hay que crearlo. 
+    La sintaxis utilizada para ello es la siguiente:
+        X<T> instancia;
+            donde X : list, vector, deque.
+            <T> : tipo de dato que se va almacenar 
+            instancia: nombre de la variable
+        vector<int> valores; (aqui se crea un arreglo de enteros)
+    
+    X::size() -> Devuelve la cantidad de elementos que tiene el contenedor
+    X::max_size() -> Devuelve el tamaño maximo que puede alcanzar el contenedor 
+                    antes de requerir mas memoria
+    X::empty() -> Retorna verdadero si el contenedor no tiene elementos
+    X::swapt(T &a) -> Intercambia el Contenido del contenedor con el que 
+                    se recibe como parametro
+    X::cler()       ->  Elimina todos los elementos del contenedor
+    v == w  v != w  Supongase que exiten dos contenedores del mismo tipo:
+    v < w   v > w       v y w. todas las comparaciones se hacen lexicograficamente
+    v <= w   v >= w     y retornan un valor booleano
+    

@@ -1,0 +1,40 @@
+Iteradores:
+    Entender el concepto de iterador es la clave para comprender enteramente
+    la estructura de la STL y hacer una mejor utilizacion de ella. Los
+    algoritmos genericos de esta biblioteca estan escritos en terminos de 
+    iteradores como paramentros y los contenedores proveen iteradores para 
+    que sean utilizados por los algoritmos. Estos componentes genericos 
+    estan diseñados para trabajar en conjunto y asi producir un resultado 
+    optimo
+
+    ... 20 48 17 5 36 12 ... (vector, lista o deque)
+
+    Un iterador es un objeto que abstrae el proceso de moverse a traves 
+    de una secuencia. El mismo permite seleccionar cada elemento de un 
+    contenedor encapsulando la estructura interna de ese contenedor. esto 
+    permite crear algoritmos genericos que funcionen con cualquier contenedor
+    utilizando operaciones comunes como ++. --, *. 
+    Ya hemos visto el empleo de iteradores con el contenedor list.
+    La sintaxis general para crear un objeto iterador es la siguiente
+    X::iterator instancia
+    ex:
+    deque<double>::iterator p;
+
+Clasificacion:
+    Los algoritmos genericos se construyen empleando iteadores que realizan
+    distintas operaciones con ellos. Sin embargo, no todos los iteradores 
+    pueden soportar todas las operaciones posibles. Entonces, la clasificacion
+    que surge aqui es por la forma en que un iterador puede moverse a traves
+    de un contenedor
+    1. Forward iterators | Iteradores que pueden avanzar el elemento siguiente 
+    2. Bidireccional iterators | Pueden avanzar al elemento suguiente o retroceder
+                                 al anterior
+    3. Random acces iterators   | Pueden avanzar o retroceder mas de una posicion de una vez
+
+    operaciones:   
+        1.  Forward:    ==  !=   *   ++
+        2.Bidireccional:   Forward y  --  
+        3. Random acess: Bidireccional y 
+            +=  -=  +   -
+            <   >   <=  >=
+        

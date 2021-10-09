@@ -1,0 +1,21 @@
+Propiedade de la notacion O:
+    De la definicion conceptual de la notacion O se deducen las siguientes
+    Propiedades:
+        1. Siendo c una constante, c*O(f(n)) = O(f(n))
+            ex: si f(n) = 3n^4, entonces f(n) = 3* O(n^4) = O(n^4)
+        2. O(f(n)) + O(g(n)) = O(f(n) + g(n))
+            ex: si f(n) = 2e^n y g(n) = 2n^3
+            O(f(n)) + O(g(n)) = O(f(n) + g(n)) = O(2e^n + 2n^3) = 
+            O(e^n + n^3) = e^n -> notacion de mayor eficiencia
+        3. Maximo(O(f(n)), O(g(n))) = O(Maximo(f(n), g(n)))
+            ex: Maximo(O(log n), O(n)) = O(Maximo(log n, n)) = O(n)
+        4. O(f(n)) * O(g(n)) = O(f(n)*g(n)) 
+            ex: si f(n) = 2n^3 y g(n) = n
+            O(f(n)) * O(g(n)) = O(f(n)*g(n)) = O(2n^3 * n) = O(2n^4) = O(n^4)
+        5. O(log_a n) = O(log_b n) para a, b > 1
+        Las funciones logaritmicas son de orden logaritmico, independiente de la 
+        base del algoritmo
+        6. O(log n!) = O(n * log n)
+        7. k > 1 O(E i^k, con i = 1 hasta n) = O(n^(k+1))
+        8. O(E log i, con i = 1 hasta n) = O(n * log n)
+        donde E es la sumatoria.

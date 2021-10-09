@@ -1,0 +1,11 @@
+Genericidad:
+    La Genericidad es una propiedad que permite definir una clase
+    (o una funcion ) sin especificar el tipo de datos de uno o mas
+    de sus miembros(parametros). De esta forma se puede cambiar la 
+    clase para adaptarla a los diferentes usos sin tener que 
+    reescribirla.
+    La razon de la genericidad se basa principalmente en el hecho de que 
+    los algortimos de resolucion de numerosos problemas no dependen
+    del tipo de datos que procesa, y sin embargo, cuando se implementan 
+    en un lenguaje de programacion, los programa que resuelven cada algoritmo 
+    seran diferentes para cada tipo de dato que procesan.

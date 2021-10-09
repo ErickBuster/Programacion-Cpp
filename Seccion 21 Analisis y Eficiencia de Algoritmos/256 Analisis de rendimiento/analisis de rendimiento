@@ -1,0 +1,43 @@
+Analisis de Rendimiento:
+    La medida del rendimiento de un programa se consigue mediante la 
+    complejidad del espacio  del tiempo en un programa
+La complejidad del espacio de un programa es la cantidad de memoria que se 
+necesita para ejecutar hasta la complecion(terminacion). El avance tecnologico
+proporciona hoy en dia memoria abundante, por esa razon el analisis de algoritmos
+se centra, fundamentalmente, en el tiempo de ejecucion
+
+La complejidad del tiempo de un programa es la cantidad de tiempo de computadora
+que se necesita para ejecutarse. Se utiliza una funcion, T(n), para representar
+el numeor de unidades de tiempo tomadas por un programa o algoritmo para 
+cualquier entrada de tamaño n.
+
+    ex:
+        tiempo de ejecucion lineal de una funcion que calcula una serie de
+        N terminos
+    double serie(double x, int n){
+        double s;
+        int i = 0;  
+        s = 0.0;                        // tiempo 1
+        for(i = 1; i <= n; i++){        // tiempo 2
+            s += i*x;                   // tiempo 3
+        }
+        return s;                       //tiempo 4
+    }
+
+    lo cual la funcion T(n) del metodo es 
+        T(n) = tiempo1 + n*tiempo2 + n*tiempo3 + tiempo4;
+    El tiempo crece a medida que lo hace n, por ello es preferible expresar 
+    el tiempo de ejecucion de tal forma que indique el comportamiento que 
+    va a tener la funcion con respecto al valor de n.
+Considerando todas las reflexiones anteiores, si T(n) es el tiempo de ejecucion
+de un programa con entrada de tamaño n, sera posible valorar T(n) como el numeor
+de sentencias ejecutadas por el programa, y la evaluacion se podra efectuar desde
+diferentes puntos de vista
+    - Peor caso: Indica el tiempo Peor que se puede tener. Este analisis es 
+    perfectamente adecuado para algoritmos cuyo tiempo de respuesta sea critico
+    - Mejor caso: Indica el tiempo mejor que podemos tener.
+    = Caso medio: Se puede computar T(n) como el tiempo medio de ejecucion del
+    programa sobre todas las posbles ejecuciones de entradas de tamaño n. El 
+    tiempo de ejecucion medio es a veces una media mas realista de lo que ele 
+    rendimiento sera en la practica, pero es, normalmente, mucho mas dificil de 
+    calcular que el tiempo de ejecucion en el caso peor.

@@ -1,0 +1,26 @@
+Objetivos:
+Con el estidio de este capitulo usted podra:
+    1. entender el concepto de encapsulacion de datos a traves de las clases
+    2. definir clases como una estructura que encierra atributos y metodos
+    3. especificar tipos de abstractos de datos a traves de una clase 
+    4. Establecer controles de acceso a los miembros de una clase
+    5. Identificar los metodos de una clase con el comportamiento o 
+    funcionalidad de los objetos 
+
+Contenido:
+    1. Clases y objetos
+    2. Declaracion de una clase
+    3. Constructores y Destructores
+    4. Autorreferencia del objeto: this
+    5. Clases compuestas
+    6. Miembros static de una clase
+    7. Funciones amigas (friend)
+    8. Tipos de abstractos de datos en C++
+    9. Ejercisios
+objeto:
+    todo aquellos que tiene 
+        Atributos (caracteristicas del objeto)
+        Metodos (Acciones que puede realizar el objeto)
+Clase:
+    es un conjunto de objetos que comparten una estructura
+    y comportamientos comunes

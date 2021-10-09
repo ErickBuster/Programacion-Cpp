@@ -1,0 +1,22 @@
+void ponerReina(int i, bool &solucion){
+    int k = 0; // Inicializa contador de movimientos
+    solucion = false;
+    do{
+        reinas[i] = k; // Coloca y anota reina i en la fila k
+        k++;
+        mostrarTablero();
+        cout << endl;
+        if(valido(i)){
+            if(i < (N-1)){
+                ponerReina(i+1, solucion);
+                //vuelta atras
+                if(!solucion){
+                    reinas[i] = 0;
+                }
+            }else{ // Todas las reinas colocadas
+                solucion = true;
+            }   
+        }
+
+    }while(!solucion && (k < N));
+}

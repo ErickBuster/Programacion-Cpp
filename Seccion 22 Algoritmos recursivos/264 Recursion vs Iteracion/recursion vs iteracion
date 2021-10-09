@@ -1,0 +1,33 @@
+Recursion vs Iteracion:
+    En las secciones anteriores se han estudiado varios
+    algoritmos que se pueden implementar facilmente de modo recursivo, o bien 
+    de modo iterativo. en este video se comparan los dos enfoques y se 
+    examinan las razones por las que el programador puede elegir un enfoque u 
+    otro segun la situacion especifica
+    La recursion tiene muchas desventajas. Se incova repetidamente al mecanismo de 
+    llamada a funcion y, en consecuencia, se necesita un tiempo suplementario
+    para realizar cada llamada. Esta caracteristica puede resultar cara en tiempo
+    de procesador y espacio de memoria
+    Entonces, cuales son las razones para elegir la recursion? La razon fundamental
+    es que existe numerosos problemas complejos que poseen naturaleza recursiva y,
+    en consecuencia, son mas faciles de implementar con algoritmos de este tipo.
+
+    ex:
+        Dado un numero natural N, obtener la suma de los 
+        digitos de que consta.
+        Presentar un algoritmo recursivo y otro iterativo
+    
+    Directrices en la toma de decision iteracion/recursion:
+        -Considere una solucion recursiva solo cuando una solucion iterativa sencilla
+        no sea posible
+        - Utilicese una solucion recursiva solo cuando la ejecucion y eficiencia
+        de la memoria de la solucion dentro de limites aceptables considerando
+        las limitaciones del sistema.
+        - Si son posibles las dos soluciones, iterativa y recursiva, la solucion
+        recursiva siempre requiere mas tiempo y espacio debido a las llamadas 
+        adicionales a las funciones 
+        - En ciertos problemas, la recursion conduce naturalmente a soluciones que 
+        son mucho mas fiable de leer y comprender que su correspondiente iterativa.
+        En estos casos los beneficios obtenidos con la claridad de la solucion 
+        suelen compensar el coste extra(en tiempo y memoria) de la ejecucion
+        de un programa recursivo.

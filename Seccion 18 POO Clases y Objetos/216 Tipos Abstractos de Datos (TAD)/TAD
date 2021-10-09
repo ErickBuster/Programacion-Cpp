@@ -1,0 +1,21 @@
+TAD: un tipo abstracto de datos es un conjunto de valores
+y de operaciones definidos mediante una especificacion 
+independiente de cualquier representacion
+    TAD = valores + operacion
+        valores = atributos
+            operacion = metodos
+La estructura mas adecuada, en C++, para implementacion un
+TAD es la clase
+Dentro de la clase va residir la representacion de los valores(atributos)
+junto a las operaciones(metodos).
+Por ejemplo, si se ha especificado tridimensional, la clase que 
+implementa el tipo:
+
+class PuntoTres{ //Es el TAD
+    private:
+        double x, y, z; // representacion de los valores
+    public:
+        PuntoTres(double x,double y,double z); //operaciones
+        double distancia(PuntoTres p);
+        ...
+};

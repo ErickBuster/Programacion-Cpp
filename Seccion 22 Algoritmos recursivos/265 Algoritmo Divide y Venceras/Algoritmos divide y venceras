@@ -1,0 +1,27 @@
+Algoritmos Divide y Venceras
+    una de las tecnicas mas importantes para la resolucoin de muchos 
+    problemas de computadora es la denominada "divide y venceras". El 
+    diseño de Algoritmos basados en esta tecnica consiste en transformar
+    (dividir) un problema de tamaño n en problemas mas pequeños, de tamaño
+    menor que n pero similares al problema original. De modo que resolviendo
+    los subproblemas y combinando las soluciones se pueda construir 
+    facilmente una solucion del problema complejo (venceras).
+
+    Normalmente, el proceso de division de problema en otros de tamaños
+    menor va a dar lugar a que se llegue el caso base, cuya solucion es 
+    inmediata. A partir de la obtencion de la solucion del problema para el 
+    caso base, se combinan soluciones que amplian el tamaño del problema 
+    resuelto, hasta que el problema original queda resuelto.
+    ex:
+        Plantea el problema de dibujar un segmento que esta conectado problema
+        los puntos en el plano(x1, y1) y (x2, y2)
+    Un Algoritmo "divide y venceras" se define de manera recursiva de tal 
+    modo que se llama a si mismo sobre un conjunto menor de elementos. Normalmente
+    se implementan con dos llamadas recursivas, cada una con un tamaño menor,
+    generalmente la mitad. Se alcanza el caso base cuando el problema 
+    se resuelve directamente
+    Un algoritmo divide y venceras consta de 2 partes:
+        1. Dividir recursivamente el problema original en subprogramas cada
+        vez mas pequeños
+        2. Resolver el problema dando solucion a los subproblemas a partir del
+        caso base 

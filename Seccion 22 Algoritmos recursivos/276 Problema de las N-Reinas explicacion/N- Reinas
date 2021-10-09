@@ -1,0 +1,43 @@
+Problema de las N-Reinas:
+    El juego de colocar ocho reinas en un tablero de ajedrez sin que se
+    ataquen entre si es otro de los ejemplos del uso de los metodos
+    de busqueda exhaustiva, sistematicam de los algoritmos de vuelta atras.
+    El problema se plantea de la forma siguiente
+
+    "Dado un tablero de ajedrez(8*8 casillas), hay que situar ocho reinas de 
+    forma que ninguna de ellas pueda actuar ("comer") a cualquiera de las otras".
+
+    En primer lugar conviene recordar que la reina se puede moverse a lo largo
+    de la columna, fila y diagonal donde se encuentra. Sin embargo, es posible
+    realizar una poda y reducir los movimientos de las reinas del problema
+    Cada columna del tablero puede contener una y solo una reina, la razon 
+    es inmediata: si por ejemplo en una columna se encuentr ya en una reina
+    y en esta columna se agrega  otra reina entonces se atacan mutuamente
+        Entonces, de las nxn casillas que puede ocupar una reina, se limita
+        su ubicacion a las 8 casilla de la columna  en que se encuentra.
+    Lo primero a considerar a la hora de aplicar el algoritmo de vuelta atras
+    es la tarea basica (solucion parcial)  que exhaustivamente se va a 
+    realizar. La propia naturaleza del problema de las 8 reinas determina 
+    que la tarea sea tantear si es posible ubicar la reina numero i, 
+    para lo que hay 8 alternativas correspondientes a las 8 filas de la columna i.
+    La comprobacion de que una sleccion es valida se hace comprobando que en 
+    la fila seleccionada y en las dos diagonales en que una reina puede 
+    atacar, no hay otra reina colocada anteriormente]
+
+    La segunda cuestion es analizar la vuelta atras.
+    Que ocurre si no es capaz de colocar las 8 reinas?: Se borra la ubicacion,
+    la fila donde se ha colocado y se ensaya con la siguiente fila valida. 
+    La realizacion de cada tarea supone ampliar el numero de reinas colocadas,
+    hasta llegar a la solucion completa, o bien determinar que no es posible
+    colocar la reina actual en las 8 posiciones filas. Entonces en la vuelta 
+    atras se coloca la reina actual en otra fila valida para realizar un nuevo 
+    tanteo.
+Representacion del Problema 
+    Debido a que el objetivo del problema es encontrar la fila en que se situa 
+    la reina de la columna i, se define el arreglo entero, reinas[], tal que cada 
+    elemento contiene el indice de la fila donde se situa la reina. el numero 
+    de reina, i , es a su vez el indice de la columna dentro de la cual se 
+    puede colocar entre los ochos posibles valores de la fila
+    
+    reina[] = {0 4 7 5 2 6 1 3}; // Fila
+               0 1 2 3 4 5 6 7  //Columna 

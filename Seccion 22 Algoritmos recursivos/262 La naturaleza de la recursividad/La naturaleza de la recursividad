@@ -1,0 +1,82 @@
+La naturaleza de la recursividad:
+Introduccion:
+    La recursividad(recursion) es aquella propiedad que posee una funcion 
+    por la cual puede llamarse a si misma. Aunque la recursividad se puede 
+    utilizar como una alternativa a la iteracion, una solucion recursiva es 
+    normalmente menos eficiente, en termino de tiempo de computadora, que 
+    una solucion iterativa, debido a las operaciones auxiliares que
+    llevan consigo las invocaciones suplementarias a las funciones.
+
+    Sin embargo, en muchas circunstancias el uso de la recursion permite a 
+    los programadores especificar soluciones naturales, sencillas, que seria, en 
+    caso contrario, dificiles de resolver. Por esta causa, la recusion es una 
+    herramienta poderosa e importante en la resolucion de problemas y en la
+    programacion. Diversas tecnicas algoritmicas utilizan la recusion, son los
+    algoritmos divide y venceras y los algoritmos de vuelta atras
+La naturaleza de la Recursividad:
+    Una funcion recursiva es aquella que se llama a si misma, bien 
+    directamente o indirectamente a traves de otra funcion. La recursividad
+    es un topico importante examinando frecuentemente en cursos en los que
+    se trata de resolucion de algoritmos y en cursos relativos a 
+    Estructuras de Datos.
+    Una funcion que tiene sentencias entre las que se encuentra al menos una
+    que llama a la propia funcion se dice que es recursiva. Asi la organizacion
+    recursiva de una funcion funcion1() seria la siguiente:
+    void funcion1(...){
+        ...
+        funcion1(); //llamada recursiva (directa)
+        ...
+    }
+    ex 1:
+        planteamiento recursivo de la funcion matematica que suma los N 
+        primeros numeros enteros positivos
+        Como punto de partida se puede afrimar que para n = 1, se tiene la suma 
+        S(1) = 1. Para n = 2 se puede escribir S(2) = S(1) + 2; en general y aplicacion
+        la induccion matematica se tiene:
+            S(n) = S(n-1) + n;
+        El algoritmo que determine la suma de modo recursivo ha de tener 
+        presente un caso base y un caso recursivo. Asi, en el caso del calculo
+        S(6), la definicion es S(6) = 6 + S(5), que de acuerdo a la definicion es
+        S(5) = 5 + S(4), este proceso continua hasta S(1) = 1 por definicion.
+        En consecuencia, la implementacion del algoritmo mencionado, que calcula la 
+        suma de los n primeros enteros:
+
+        long sumaNEnteros(int n){
+            if(n == 1){
+                return 1;
+            }else{
+                return n + sumaNEnteros(n-1);
+            }
+        }
+    ex 2:
+        Definir la naturaleza recursiva de la serie Fibonacci: 0 1 1 2 3 5 8 13 21 ...
+        Se observa en esta serie que comienza con 0 y 1, tiene la propiedad de 
+        que cada elemento es la suma de los dos elementos anteriores, por ejemplo
+        0 + 1 = 1
+        1 + 1 = 2
+        2 + 1 = 3
+        3 + 2 = 5
+        5 + 3 = 8
+        8 + 5 = 13
+        ...
+        Entonces se puede establecer que 
+        Fibonacci(0) = 0
+        Fibonacci(1) = 1
+        ...
+        Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2)
+        y la definicion recursiva sera:
+        Fibonacci(n) = n                                si n = 0 o n = 1
+        Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2)  si n >= 2
+        asi por ejemplo
+        Fibonacci(6) = Fibonacci(5) + Fibonacci(4)
+        En consecuenciam la implementacion del algoritmo mencionado de la serie 
+        Fibonaccies:
+
+        long Fibonacci(int n ){
+            if(n == 0 || n == 1){
+                return n;
+            }else{
+                return (Fibonacci(n-1) + Fibonacci(n-2))
+            }
+        }
+        

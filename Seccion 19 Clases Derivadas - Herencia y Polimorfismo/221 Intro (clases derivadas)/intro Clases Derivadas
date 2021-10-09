@@ -1,0 +1,21 @@
+Clases Derivadas:
+    Herencia y Polimorfismo
+    -Objetivos: Con el estudio de este capitulo podra:
+        *Conocer el concepto de clases Derivadas
+        *Aprender a realizar Herencia simple y multiple
+        *Conocer el concepto de ligadura y funciones virtuales
+        *Manejar el concepto de Polimorfismo
+    -Contenido:
+        1. Clases Derivadas
+        2. Tipos de Herencia
+        3. Destructores
+        4. Herencia multiple
+        5.Clases Abstractas
+        6. ligaduras
+        7. Funciones virtuales
+        8. Polimorfismo
+        9. ligadura dinamica frente a ligadura estatica
+        10. Ejercisio
+    
+    
+

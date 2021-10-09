@@ -1,0 +1,26 @@
+biblioteca Estandar de plantillas (STL)
+    Que es la STL?
+    La STL (del ingles Standar Template Libary) es una biblioteca de clases
+    y funciones templates creada para estandarizar y optimizar la utilizacion
+    de algortimos y estructuras de datos en el desarrollo de software en C++
+
+    La adopcion de esta biblioteca posee grandes ventajas: al ser estandar 
+    esta disponible en todos los compiladores y plataformas; esta libre de 
+    errores, por lo tanto se ahorrara tiempo de depurar el codigo; proporciona
+    sus propia gestion de memoria
+    La biblioteca presenta tres componentes basicos: Contenedores, iteradores y algortimos
+
+    Los contenedores son los objetos capaces de almacenar otros objetos, cada 
+    uno de forma particular. Representan a las estructuras de datos usuales,
+    como los arreglos lineales o las listas enlazadas. Ademas estos presentan otras
+    caracteristicas adicionales que lo hacen mas potentes: dinamicos y templates 
+
+    Lo iteradores son objetos a traves de los cuales se puede acceder
+    a los elementos del contenedor. El concepto de iterador es similar al 
+    de un puntero, solo que al ser una clase provee mayores utilidades de este 
+
+    Pero la gran utilidad de los iteradores ocurre cuando son utilizados por 
+    los Algoritmos. En la biblioteca existen mas de setenta algortimos para 
+    aplicar sobre los contenedores a traves de los iteradores. Hay algortimos de
+    Busqueda, de Ordenamiento, de Transformacion, Matematicos, etc.
+    

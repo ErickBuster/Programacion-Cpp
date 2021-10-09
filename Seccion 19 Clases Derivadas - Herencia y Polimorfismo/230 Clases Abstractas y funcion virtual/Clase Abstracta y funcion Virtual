@@ -1,0 +1,22 @@
+Clases Abstractas:
+    -Se utilizan solo como clase base
+    -No se pueden instancia objetos (no crear objetos)
+    -Sirven para proporcionar una case base apropiada a 
+    partir de la cual heredan otras clases 
+
+            Diagrama de Clases
+    SerVivo--> Clase Abstracta
+(Virtual: Debe estar solamente definido )
+Virtual +alimentarse() : void (el signo +significa que es de tipo publico) 
+
+    ^       clases hijas            ^
+    |                               |
+    Animal--> Clase Abstracta      Planta
+
+Virtual +alimentarse() : void       +alimentarse() : void
+
+    ^          ^
+    |          |---------------------     
+    Carnivoro                       |
+                                Herbivoro
++alimentarse() : void       +alimentarse() : void

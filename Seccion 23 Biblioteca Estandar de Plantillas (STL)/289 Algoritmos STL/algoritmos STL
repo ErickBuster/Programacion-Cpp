@@ -1,0 +1,50 @@
+Algoritmos STL:
+    Como se menciono anteriormente, existe una gran cantidad de algortimos
+    disponibles en la STL que pueden ser utilizados con los contenedorres
+    e iteradores que se explicaron hasta aqui
+    Hay algortimos de ordenamiento, busqueda, mezcla, matematicos, etc.
+    Estos algortimos no son otra cosa que funciones template que operan 
+    sobre contenedores a traves de los iteradores de estos.
+
+Estructura General:
+    Para descrbir la estrucuta general que poseen los algortimos de la 
+    biblioteca se utiliza un ejemplo:
+        template <class T>
+        T max(vector<T> &v){
+            //crear una variable para devolver el maximo 
+            T maximo = v[0];
+            //buscar el maximo
+            for(int i = 1; i < v.size(); i++){
+                if(maximo < v[i]){
+                    maximo = v[i];
+                }
+            }
+            return maximo;
+        }
+        Algunas desventajas que tiene el algortimo anterior es que 
+        solo es una funciona para tipo vector, lo cual no funciona para 
+        deque o list u otro tipo, y la segunda desventaja es que no puede
+        sacar el numero maximo en un rango en concreto, si no que saca el 
+        num maximo de todo el vector y no de un rango
+
+        ex2:
+    #include <iostream>
+    using namespace std;
+    //Crear un algortimo generico para encontrar el maximo 
+    template<class iter>
+    iter max(iter inicio, iter fin){
+        //crear una variable para devolver el maximo
+        iter maximo = inicio;
+        iter aux = inicio;
+        //buscar el maximo
+        while(aux != fin){
+            if(*maximo < (aux)){
+                maximo = aux;
+            }
+            aux++;
+        }
+        return maximo;
+    }
+    lo cual en este algortimo saca el elemento maximo de cualquier tipo
+    de contenedor y tambien de un rango especifico y es mas completa que 
+    el primer codigo

@@ -1,0 +1,19 @@
+Bakctracking, Algoritmos de vuelta atras
+    Se trata de una estrategia normalmente recursiva para resolver 
+    problemas como los de los laberintos, la colocacion de piezas y 
+    similares, en los que mediante una busqueda en profundidad se puede 
+    dar con la solucionEl nombre vuelta atras (Bakctracking) viene del
+    hecho de que en la busqueda de la solucion se va volviendo a un 
+    punto anterior para probar alternativas.
+
+    como un laberinto
+    normalmente las combinaciones de este tipo de problemas son muchas,
+    pero se aplican ciertas restriccionesm lo que suele hacer el total de 
+    opciones a probar algo computable en un tiempo razonable. Tambien se puede 
+    buscar revisar todas planteando obtener << una solucion mejor>>; de
+    este modo se puede llegar a la solucion optima
+    Algunos ejemplos tipicos en los que se puede aplicar este metodo son 
+    los laberintos, el Sudoku o en ajedrez el problema del recorrido del 
+    caballo o el de las ocho damas. en terrenos mas practicos el problema 
+    de la mochila es uno de los ejemplos mas clasicos.
+    

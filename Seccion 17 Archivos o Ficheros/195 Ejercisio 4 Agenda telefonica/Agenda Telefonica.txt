@@ -1,0 +1,21 @@
+	AGENDA TELEFONICA 
+Nombre: luis 
+Apellido angel
+Telefono: 516486
+
+Nombre: raul
+Apellido hez
+Telefono: 132456
+
+Nombre: pepe
+Apellido sanchez
+Telefono: 987654
+
+Nombre: javier
+Apellido fsdfgs
+Telefono: 159487263
+
+Nombre: juan
+Apellido sebastian
+Telefono: 123654
+

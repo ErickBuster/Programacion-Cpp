@@ -1,0 +1,17 @@
+Complejidad de las sentencias basicas de C++:
+    Al analizar la Complejidad de un metodo no recursivo, se han de aplicar
+    las Propiedades de la notacion O y las siguientes consideraciones relativas
+    al orden que tienen las  sentencias, fundamentalmente a las estructuras de 
+    control.
+        - Las sentencias de asignacion, son de orden constante O(1)
+        - La Complejidad de una snetencia de seleccion es el maximo de 
+        las Complejidades del bloque if y del bloque else
+        - La Complejidad de una sentencia de seleccion multiple(switch) es 
+        el maximo de las Complejidades de cada uno de los bloques case
+    Para calcular la Complejidad de un bucle, condicional o automatico, se ha
+    de estimar el numero maximo de iteracion para el peor caso; entonces la
+    Complejidad de las sentencias que forman el cuerpo del bucle.
+    La Complejidad de un bloque se calcula como la suma de las Complejidades de 
+    cada sentencia del bloque
+    La Complejidad de la llamada a una funcion es el orden 1, Complejidad
+    constante. Es necesario considerar la Complejidad de la funcino llamada.

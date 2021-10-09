@@ -1,0 +1,34 @@
+Contenedores Asociativos:
+    1. Map
+    2. Set
+    3. Multimap
+    4. Multiset
+
+    Hasta este momento se explico la estructura general de la STL con los
+    Contenedores lineales, los iteradores y los algoritmos. Con esta idea 
+    general, se retoma la descripcion de los Contenedores faltantes, los
+    Asociativos. Estos contenedores son: set, Multiset, map, Multimap.
+
+    Su estructura en memoria no es secuencia como en los contenedores anteriores
+    si no que se implementan como arboles binarios de busqueda balanceados
+    Esto hace que el tiempo de busqueda sea proporcional al logaritmo
+    en base dos de la cantidad de elementos, en vez de ser proporcional
+    al tamaño del contenedor, como es el caso de las lista lineales.
+    log_2 (n)
+    Los contenedores Asociativos proveen para su manipulacion iteradores 
+    bidireccionales, al igual que las listas doblemente enlazadas. Por lo 
+    tanto, solo se podran utilizar aquellos algoritmos que requieren
+    de estos iteradores. Sin embargo, estos contenedores proveen algunos 
+    metodos para las funciones de busqueda y conteo, los cuales se explica 
+    a continuacion
+
+    A::insert(clave &x) |   Inserta el elemento x en el contenedor
+    A::insert(A::iterator i, A::iterator f) | Inserta los elementos que estan en 
+                                                el rango de los iteradores en el contenedor
+    A::erase(clave &x)  | Borra todos los elementos que tengan la clave x
+    A::erase(A::iterator p) |   Borra el elemento apuntado por p 
+    A::count(clave &x)  |   Devuelve la cantidad de elementos que tiene la clave x
+    A::find(clave &x)   |   Devuelve un iterador al primer elemento que tenga la clave x
+    A::lowe_bound(clave &x)    |    Devuelve un iterador al primer elemento que tenga la clave x
+    A::upper_bound(clave &x)    |   Devuelve un iterador al elemento siguiente al ultimo elemento clave x
+    

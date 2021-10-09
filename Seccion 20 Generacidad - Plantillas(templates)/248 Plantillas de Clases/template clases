@@ -1,0 +1,16 @@
+Plantillas de Clases"
+    Las plantillas de clases permiten definir versiones de una misma
+    clase que difieren en el tipo de dato de alguno(s) de sus miembros
+    Es decir, se crea el modelo de una clase el cual permitira definir 
+    distintas instnacias de la misma para diferentes tipos de datos
+
+    Para declarar una plantilla de clase se utiliza lo siguiente
+    template<class T>
+    class plantillaClase{
+        private:
+            T atributo;
+        public:
+            plantillaClase();
+            T Metodo1();
+            void Metodo2(T valor);
+    }

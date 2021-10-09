@@ -1,0 +1,28 @@
+Objetivos:
+    Con el estudio de este capitulo usted podra:
+        -Conocer el concepto de biblioteca de plantillas
+        - Generalizar el concepto de apuntador mediante iteradores
+        - Aplicar los iteradores a los contenedores
+        - Conocer las funciones miembro mas importante de los contenedores
+        - Conocer vectores, listas, colas, set(conjuntos), multiset (multiconjuntos)
+        map (mapas), multimap (Multimapas)
+
+Contenido:
+    1. biblioteca STL- conceptos clave:
+    2. Contenedores STL
+        -Contenedor lineal -vector 
+        - Contenedor lineal - duque (doble cola)
+        - Contenedor lineal - list (lista doblemente enlazada)
+    3. Iteradores STL
+        - Iteradores - Random acces iterators
+        - Iteradores - Forward iterators
+    4. Algoritmos STL 
+        - Algoritmos STL - iniciando con la biblioteca algortihm
+        - Algoritmos STL - Busqueda y Ordenamiento
+        - Algoritmos STL - Matematicos
+        - Algoritmos STL - Transformacion
+    5. Contenedores Asociativos
+        - Contenedor Asociativo - set (conjunto)
+        - Contenedor Asociativo - multiset (multiconjunto)
+        - Contenedor Asociativo - map (Mapa)
+        - Contenedor Asociativo - multimap (Multimapa)
